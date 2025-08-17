@@ -35,6 +35,8 @@ function Projects() {
               <div>
                 <div>
                   <h3>{p.title}</h3>
+                  <img src={`/images/${p.imagelink}`} alt="My image" />
+
                   <p >
                     <br />{p.description}<br /><br />
                   </p>
