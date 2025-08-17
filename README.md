@@ -1,12 +1,76 @@
-# React + Vite
+# Portfolio Project Front-End (2025)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the front-end portfolio site built with **React**. It consumes the REST API I created in Assignment 1 to dynamically display data for my projects and skills.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What I Did
 
-## Expanding the ESLint configuration
+- Built the front-end entirely in **React**
+- Used **Axios** to fetch data from my backend API
+- Created a structured layout for a professional portfolio
+- Displayed data dynamically from `about` and `projects` collections
+- Created a contact section with my information
+- Fully styled and made responsive using a custom CSS approach
+- Deployed the site online 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Live Site
+
+- Frontend URL: (https://portfolio-project-front-end-2025.vercel.app/)
+
+---
+
+## Tech Stack
+
+- React.js (with Vite )
+- Axios (for API requests)
+- CSS (custom + framework)
+- Deployed using Vercel
+
+---
+
+## Data Consumed From Backend API
+
+| API Endpoint         | Data Used           |
+|----------------------|---------------------|
+| `/api/about`         |   Description       |
+| `/api/projects`      |   Project listings  |
+| `/api/contacts`      |   Messaging         |
+
+---
+
+## Sections of the Site
+
+### About Me
+- Name: [Alyssa]
+- Role: [Full Stack Developer]
+
+### Projects
+- Pulled dynamically from `/api/projects`
+- Each includes:
+  - Project name
+  - Screenshot/image
+  - Short description
+  - Technologies used
+  - Live URL 
+
+### Contact
+- Contact form 
+
+---
+
+## Testing & Deployment
+
+- Site fetches data from live backend
+- API tested and verified working with deployed frontend
+- CORS configured correctly on backend
+
+---
+
+## Notes
+
+- All data stored and managed via MongoDB Atlas
+- Admin pages used only for content management — this site is public-facing
+- Designed for mobile and desktop use
