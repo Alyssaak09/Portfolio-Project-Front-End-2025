@@ -45,7 +45,8 @@ This is the front-end portfolio site built with **React**. It consumes the REST 
 
 ### About Me
 - Pulled dynamically from `/api/about`
-- Description
+- It includes:
+  - Description
 
 
 ### Projects
@@ -59,9 +60,10 @@ This is the front-end portfolio site built with **React**. It consumes the REST 
 
 ### Contact
 - Pulled dynamically from `/api/contacts`
-- Name
-- Email
-- Message
+- Each includes:
+   - Name
+   - Email
+   - Message
 
 ---
 
