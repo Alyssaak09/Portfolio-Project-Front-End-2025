@@ -94,6 +94,10 @@ input, textarea {
   font-size: 1.1em;
   padding: o.5em;
 }
+
+img {
+  width: 250px;
+}
 /**/
 #root {
   max-width: 1280px;
