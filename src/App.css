@@ -81,6 +81,19 @@ article {
   padding: 1.5em;
   margin-bottom:10px;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 40%;
+  margin: 0 auto;
+}
+
+input, textarea {
+  font-size: 1.1em;
+  padding: o.5em;
+}
 /**/
 #root {
   max-width: 1280px;
