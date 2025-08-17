@@ -1,109 +1,242 @@
-/* styles from figma */
-/* .project-item {
-  position: relative;
-  margin-bottom: 50px;
+/* Portfolio Styling */
+
+/* Global typography */
+h2 {
+  font-family: 'Fredoka One', cursive;
+  color: #6508bb;
+  font-size: 2.8rem;
+  margin-bottom: 1em;
 }
 
-.project-link {
-  color: inherit;
-  text-decoration: none;
-  display: inline-block;
-  padding: 5px 0;
+h3 {
+  font-family: 'Fredoka One', cursive;
+  color: #333;
 }
 
-.project-link:hover {
-  text-decoration: underline;
+p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #4b0082;
+  line-height: 1.7;
+  font-size: 1.2rem;
 }
 
-.project-link:focus {
-  outline: 2px solid #6a05ad;
-  outline-offset: 2px;
+/* Section shared styling */
+section {
+  max-width: 900px;
+  margin: 3rem auto 4rem auto;
+  padding: 2rem 2rem 3rem 2rem;
+  background-color: #EDCEFF;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(101, 8, 187, 0.2);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #3a2a5c;
 }
 
-.projects {
-  position: absolute;
-  width: 860px;
-  height: 1369px;
-  top: 785px;
-  left: 103px;
+/* About Section */
+#about img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(101, 8, 187, 0.3);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
 }
 
-.text-wrapper-7 {
-  position: absolute;
-  width: 422px;
-  top: 0;
-  left: 0;
-  font-family: "HeadLineA-Regular", Helvetica;
-  font-weight: 400;
-  color: #6a05ad;
-  font-size: 64px;
-  letter-spacing: 0;
-  line-height: normal;
+#about img:hover {
+  transform: scale(1.05);
 }
 
-.fill-my-cup-of-faith-wrapper {
-  position: absolute;
-  width: 500px;
-  height: 224px;
-  top: 131px;
-  left: 350px;
-  background-color: #f8ecff;
-}
-
-.fill-my-cup-of-faith {
-  position: absolute;
-  width: 481px;
-  top: 16px;
-  left: 9px;
-  font-family: "Inter", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.text-wrapper-7 {
-  position: absolute;
-  width: 422px;
-  top: 0;
-  left: 0;
-  font-family: "HeadLineA-Regular", Helvetica;
-  font-weight: 400;
-  color: #6a05ad;
-  font-size: 64px;
-  letter-spacing: 0;
-  line-height: normal;
-} */
-article {
-  border: 2px solid #646cff;
+/* Projects Section */
+#projects article {
+  border: 2px solid #6508bb;
   border-radius: 8px;
   padding: 1.5em;
-  margin-bottom:10px;
+  margin-bottom: 1.5rem;
+  background-color: #EDCEFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
 }
 
+#projects article:hover {
+  transform: scale(1.02);
+}
+
+#projects article img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 4px;
+}
+
+#projects article p {
+  margin: 0.5em 0;
+  line-height: 1.6;
+  color: #444;
+}
+
+.project-button {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  background-color: #6508bb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.project-button:hover {
+  background-color: #4b0496;
+}
+
+/* Contact Section */
 form {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  width: 40%;
-  margin: 0 auto;
+  gap: 1.5em;
+  max-width: 500px;
+  width: 90%;
+  margin: 2em auto;
+  padding: 1.5em;
+  background-color: #f9f7ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(101, 8, 187, 0.15);
+  font-family: 'Inter', sans-serif;
+  color: #3a2a5c;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+  color: #4b0082;
 }
 
 input, textarea {
-  font-size: 1.1em;
-  padding: o.5em;
+  font-size: 1.05em;
+  padding: 0.75em 1em;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+  min-height: 40px;
+  font-family: 'Inter', sans-serif;
 }
 
-img {
-  width: 250px;
+textarea {
+  min-height: 120px;
 }
+
+input:focus, textarea:focus {
+  border-color: #6508bb;
+  outline: none;
+  box-shadow: 0 0 6px #6508bbaa;
+}
+
+button {
+  background-color: #6508bb;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1em;
+  padding: 0.85em 1.5em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  font-family: 'Fredoka One', cursive;
+}
+
+button:hover {
+  background-color: #4b0580;
+}
+
+/* Footer Styling */
+.footer {
+  width: 100%;
+  background-color: #6508bb;
+  color: white;
+  text-align: center;
+  padding: 1.2em 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin-top: 3em;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1em;
+  color: white;
+}
+
+
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  section {
+    max-width: 90%;
+    padding: 1.5rem 1rem 2rem 1rem;
+  }
+
+  #about img {
+    width: 180px;
+    height: 180px;
+  }
+
+  #projects article img {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    max-width: 95%;
+    padding: 1rem 0.75rem 1.5rem 0.75rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #about img {
+    width: 140px;
+    height: 140px;
+  }
+
+  #projects article img {
+    max-width: 140px;
+  }
+
+  form {
+    width: 95%;
+    padding: 1em;
+  }
+}
+
+
 /**/
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;  /* added side padding for smaller screens */
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .logo {

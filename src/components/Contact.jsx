@@ -21,7 +21,7 @@ function Contact() {
         });
 
         setSubmitted(true); // Set submitted state to true
-        setFormData({name:"",email:"",message:""}); // Reset from data
+        setFormData({name:"",email:"",message:""}); // Reset form data
 
         document.querySelector('form').reset(); // Reset the form fields
 
