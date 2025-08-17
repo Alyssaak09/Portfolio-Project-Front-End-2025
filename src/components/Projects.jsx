@@ -22,6 +22,7 @@ function Projects() {
 
   return (
 
+    <main class="main-portfolio-page" >
     <section class="projects" id="projects">
       <h2 class="text-wrapper-7">Projects</h2>
 
@@ -56,6 +57,7 @@ function Projects() {
         })  // projects.map((p) => {
       }
     </section>
+    </main>
 
   )   // return 
 
