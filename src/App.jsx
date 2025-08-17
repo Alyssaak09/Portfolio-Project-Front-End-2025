@@ -1,40 +1,10 @@
-import { useState, useEffect } from 'react';
-
 import './App.css';
+import Projects from './components/Projects';
 
 function App() {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-
-    async function fetchProjects() {
-      let resp = await fetch('https://portfolio-project-2025.onrender.com/api/projects');
-      let data = await resp.json();
-
-      console.log(data);
-      setProjects(data);
-
-    }  // fetchProjects()
-
-    // Call the fetchProjects function to get the projects data
-    fetchProjects();
-
-  }, []);  // useEffect(() 
-
-
+ 
   return (
-    <ul>
-      {
-      projects.map(p => {
-        return (
-          <li key={p.id}>
-            {p.title}            
-          </li>
-        )
-
-      })
-     }
-    </ul>
+   <Projects/>
   )
 }
 
