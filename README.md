@@ -18,7 +18,7 @@ This is the front-end portfolio site built with **React**. It consumes the REST 
 
 ## Live Site
 
-- Frontend URL: [https://portfolio-project-front-end-2025.vercel.app/](https://portfolio-project-front-end-2025.vercel.app/)
+- [Portfolio Project Frontend](https://portfolio-project-front-end-2025.vercel.app/)
 
 ---
 
